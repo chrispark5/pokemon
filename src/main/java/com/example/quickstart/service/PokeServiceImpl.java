@@ -67,7 +67,7 @@ public class PokeServiceImpl implements PokeService {
         for (Pokemon.Stats stat : pokemonDTO.getStats()) {
             System.out.println(stat);
         StatEntity statEntity = new StatEntity();
-        statEntity.setName(stat.getStat().getName()); //correct
+        statEntity.setName(stat.getStat().getName()); 
         statEntity.setBaseStat(stat.getBaseStat()); 
         statEntity.setPokemon(pokemonEntity); // Set the Pokemon for the stat
         statEntities.add(statEntity); //adds new Stat object to the List
