@@ -31,6 +31,12 @@ cd pokemon
 or install and run using make.sh file
 ./make.sh
 
-//5. Check server is running
+//5. Set Postgres DB properties in application.properties file
+spring.application.name=your-app-name
+spring.datasource.url=jdbc:postgresql://your-database-host:5432/your-database-name
+spring.datasource.username=your-database-username
+spring.datasource.password=your-database-password
+
+//6. Check server is running
 The server should be running at http://localhost:8080.
 ```
